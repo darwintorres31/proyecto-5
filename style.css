@@ -1,0 +1,157 @@
+
+/* Configuración general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f3ff;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+.testimonios {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+/* Encabezado */
+.encabezado {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.etiqueta {
+  color: #ddcef5;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 13px;
+}
+
+.encabezado h1 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+
+
+/*  tarjetas */
+.contenedor-tarjetas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+/* Tarjetas individuales */
+.tarjeta {
+  background: white;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(31, 41, 55, 0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: transform 0.3s ease,
+  box-shadow 0.3s ease;
+}
+
+
+
+.opinion {
+  color: #4b5563;
+  flex-grow: 1;
+}
+
+/* Información del cliente */
+.cliente {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 16px;
+}
+
+.cliente img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.cliente h3 {
+  font-size: 15px;
+}
+
+.cliente span {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Tarjeta destacada */
+.destacada {
+  background: #6d28d9;
+  color: white;
+}
+
+
+
+.destacada .opinion,
+.destacada .cliente span {
+  color: #ede9fe;
+}
+
+.destacada .cliente {
+  border-color: #dec4ec;
+}
+.abajo {
+  width: 800px;
+  margin: 20px auto;
+  padding: 15px;
+  background: white;
+  border: 1px solid gray;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.abajo p {
+  font-size: 9px;
+  color: #555;
+}
+
+.personas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px;
+}
+
+.personas img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+
+
+.abajo small {
+  font-size: 9px;
+}
+
+/* Adaptación a dispositivos móviles */
+@media (max-width: 600px) {
+  .testimonios {
+    padding: 40px 16px;
+  }
+
+  .encabezado h1 {
+    font-size: 27px;
+  }
+
+  .contenedor-tarjetas {
+    grid-template-columns: 1fr;
+  }
+}
